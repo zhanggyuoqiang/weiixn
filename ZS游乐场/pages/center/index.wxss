@@ -1,0 +1,41 @@
+page {
+  background:#F0F0F0;
+}
+.box{
+background: white;
+}
+
+.item{
+	display: flex;
+	margin-left: 30rpx;
+  padding-right: 30rpx;
+  border-bottom: 1rpx solid#F0F0F0
+
+}
+
+.item input{
+  flex: 1;
+  font-size: 28rpx;
+  text-align: right;
+  color: #C9C9C9;
+}
+.item label {
+  display: flock;
+	width: 120rpx;
+	line-height: 2;
+  font-size: 28rpx;
+  color: #3C3C3C;
+}
+button {
+    width: 640rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    background: #FECA49 ;
+    margin-top:40rpx;
+    color: #FFF
+}
+
+button::after{
+	content: '';
+	border: none;
+}

@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<swiper>
+	<swiper-item>
+  <image src="../../assets/img/1.jpg"></image>
+  </swiper-item>
+	 <swiper-item>
+  <image src="../../assets/img/2.jpg"></image>
+  </swiper-item>
+    <swiper-item>
+  <image src="../../assets/img/3.jpg"></image>
+  </swiper-item>
+    <swiper-item>
+  <image src="../../assets/img/4.jpg"></image>
+  </swiper-item>
+    <swiper-item>
+  <image src="../../assets/img/5.jpg"></image>
+  </swiper-item>
+</swiper>
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap=" bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>
+<image src="../../icons/马自达mx5.jpg">
+</image>
+<view class="one">
+我是一个普通的盒子<text bind:tap="sayH">相当于一个soac</text>
+</view>  
